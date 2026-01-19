@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Madhubani Art",
+    "image": "images/mm.webp"
+  },
+  {
+    "id": 2,
+    "name": "Warli Art",
+    "image": "images/warli-art-23-artzolo-com.webp"
+  },
+  {
+    "id": 3,
+    "name": "Pattachitra",
+    "image": "images/pp.webp"
+  },
+  {
+    "id": 4,
+    "name": "Kalamkari",
+    "image": "images/jj.webp"
+  }
+]

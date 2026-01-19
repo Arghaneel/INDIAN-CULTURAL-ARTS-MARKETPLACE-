@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "category": "Madhubani Art",
+    "title": "Radha Krishna Madhubani",
+    "price": 2500,
+    "image": "images/mm.webp"
+  },
+  {
+    "id": 102,
+    "category": "Warli Art",
+    "title": "Village Life Warli Painting",
+    "price": 1800,
+    "image": "images/warli-art-23-artzolo-com.webp"
+  },
+  {
+    "id": 103,
+    "category": "Pattachitra",
+    "title": "Jagannath Pattachitra",
+    "price": 3200,
+    "image": "images/pp.webp"
+  }
+]
