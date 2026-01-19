@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Folk Art Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🎨 Indian Folk Art Marketplace</div>
+    <nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="#categories">Categories</a>
+  <a href="#contact">Contact</a>
+
+  <a href="login.html" id="loginBtn">Login</a>
+  <a href="register.html" id="registerBtn">Register</a>
+
+  <span id="userBox" style="display:none;">
+    👤 <span id="navUser"></span>
+    <a href="#" onclick="logout()">Logout</a>
+  </span>
+</nav>
+
+</header>
+
+<section class="hero">
+  <h1>Discover India's Traditional Art Forms</h1>
+  <p>Buy authentic handmade crafts directly from local artisans</p>
+  <button>Explore Collections</button>
+</section>
+
+<div class="welcome">
+  Good Morning! 🌅 Welcome to Indian Folk Art Marketplace
+</div>
+
+<!-- CATEGORIES -->
+<section class="section" id="categories">
+  <h2>Featured Categories</h2>
+  <p class="subtitle">Explore the rich diversity of Indian folk art</p>
+
+  <div class="card-container">
+
+    <div class="card image-card" onclick="openCategory('madhubani')">
+      <img src="md.webp" alt="">
+      <h3>Madhubani Art</h3>
+    </div>
+
+    <div class="card image-card" onclick="openCategory('warli')">
+      <img src="warli-art-23-artzolo-com.webp" alt="">
+      <h3>Warli Art</h3>
+    </div>
+
+    <div class="card image-card" onclick="openCategory('pattachitra')">
+      <img src="laxmi-bengal-patachitra-painting-a5-frame-paintings-129792.webp" alt="">
+      <h3>Pattachitra</h3>
+    </div>
+
+    <div class="card image-card" onclick="openCategory('kalamkari')">
+      <img src="2_1_1400x_09ebe5e8-fabd-4e5e-9994-0abe4daebc90_large.webp">
+      <h3>Kalamkari</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact & Feedback</h2>
+  <p class="subtitle">Send us a note and we will reply within 24 hours</p>
+
+  <form class="contact-form">
+    <label>Name</label>
+    <input type="text" placeholder="Your full name">
+
+    <label>Email</label>
+    <input type="email" placeholder="you@example.com">
+
+    <label>Message</label>
+    <textarea placeholder="Tell us what you need"></textarea>
+
+    <button>Submit</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Indian Folk Art Marketplace</h3>
+      <p>Preserving and promoting India's rich cultural heritage.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Arghaneel Das</p>
+      <p>Ashutosh Sharma</p>
+    </div>
+  </div>
+  <p class="copyright">© 2025-26 Indian Folk Art Marketplace</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="auth.js"></script>
+<script>
+  const user = JSON.parse(localStorage.getItem("loggedUser"));
+
+  if (user) {
+    document.getElementById("loginBtn").style.display = "none";
+    document.getElementById("registerBtn").style.display = "none";
+    document.getElementById("userBox").style.display = "inline";
+    document.getElementById("navUser").innerText = user.name;
+  }
+</script>
+
+</body>
+</html>
